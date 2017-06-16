@@ -1,0 +1,49 @@
+<!--
+  Generated template for the CalculationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+  	<button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>算诉讼</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<div id="calculation">
+		<div class="calc-input">
+			<ion-item>
+			    <ion-input type="text" value="" [(ngModel)]="amount" placeholder="请输入该案件的争议金额" class="form-control"></ion-input>
+		  	</ion-item>
+		  	<ion-label item-end class="tip">（币种：人民币；单位：元）</ion-label>
+		</div>
+		<div class="calc-btns">
+			<ion-label item-end class="ilabel">请选择案件类型或项目：</ion-label>
+			<ion-item class="text-center">
+				<button ion-button color="light" outline (click)="assetsTapped()">财产诉讼</button>
+				<button ion-button color="light" outline (click)="divorceTapped()">离婚诉讼</button>
+			</ion-item>
+			<ion-item class="text-center">
+				<button ion-button color="light" outline (click)="tortTapped()">侵权案诉讼</button>
+				<button ion-button color="light" outline (click)="execTapped()">执行费</button>
+				<button ion-button color="light" outline (click)="keepTapped()">保全费</button>
+			</ion-item>
+		</div>
+		<div class="calc-res">
+			<ion-label class="wth45 fl tal">您所需的费用为</ion-label>
+			<ion-label class="wth45 fr tar color-orange fz16">{{result}}元</ion-label>
+		</div>
+		<div class="calc-desc">
+			<p>
+				说明：计算结果仅供参考，因案件实际情况、地域、律师等因素的不同，律师费用会有所差别。实际的费用请与您的律师确认。
+			</p>
+		</div>
+	</div>
+</ion-content>

@@ -1,0 +1,80 @@
+page-calculation {
+
+	.fl{
+		float: left;
+	}
+	.fr{
+		float: right;
+	}
+
+	.tal{
+		text-align: left;
+	}
+
+	.tar{
+		text-align: right;
+	}
+
+	.color-orange{
+		color: orange;
+	}
+
+	.fz16{
+		font-size: 16px;
+	}
+
+	.content{
+		background: url('../assets/images/wap-bg.jpg') no-repeat 100%;
+		color: #fff;
+		#calculation{
+			position: relative;
+			.item{
+				background: rgba(0,0,0,0);
+				// text-align: center;
+				.item-inner{
+					border-bottom: none;
+				}
+				.form-control{
+					background: #fff;
+					padding: 5px 12px;
+					border-radius: 5px;
+				}
+			}
+			.ilabel{
+				padding: 10px;
+			}
+			label{
+				margin: 0!important;
+			}
+			.item-button{
+				height: 40px;
+				padding: 10px;
+			}
+			.text-center{
+				text-align: center;
+			}
+			.calc-input{
+				border-bottom: 1px solid;
+				overflow: hidden;
+				.tip{
+					float: right;
+					margin: 10px;
+				}
+			}
+			.calc-btns{
+				border-bottom: 1px solid;
+			}
+			.calc-res{
+				border-bottom: 1px solid;
+				overflow: hidden;
+				padding: 10px 0;
+				.wth45{
+					width: 45%;
+				}
+			}
+			.calc-desc{
+				line-height: 30px;
+			}
+		}
+	}
+}
