@@ -4,7 +4,7 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
-import { CalculationPage } from '../pages/calculation/calculation';
+import { ShopPage } from '../pages/shop/shop';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,7 +17,7 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = CalculationPage;
+  rootPage = ShopPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
@@ -30,9 +30,9 @@ export class MyApp {
 
     // set our app's pages
     this.pages = [
-      { title: 'Hello Ionic', component: HelloIonicPage },
-      { title: 'My First List', component: ListPage },
-      { title: 'Calculation', component: CalculationPage }
+      // { title: '欢迎demo', component: HelloIonicPage },
+      // { title: '列表demo', component: ListPage },
+      { title: '商城', component: ShopPage }
     ];
   }
 

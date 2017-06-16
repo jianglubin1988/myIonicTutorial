@@ -1,0 +1,92 @@
+<!--
+  Generated template for the ShopDetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>工具详情</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-slides pager class="banner">
+	  <ion-slide>
+	  	<img src="assets/images/enter.png"/>
+	  </ion-slide>
+	  <ion-slide>
+	  	<img src="assets/images/calc.png"/>
+	  </ion-slide>
+	  <ion-slide>
+	  	<img src="assets/images/balance.png"/>
+	  </ion-slide>
+	  <ion-slide>
+	  	<img src="assets/images/new.png"/>
+	  </ion-slide>
+	</ion-slides>
+
+<div class="detail">
+	<div class="title">
+		<p class="name">
+			算诉讼
+		</p>
+		<p class="price">
+			￥1.00
+		</p>
+		<p class="num">
+			<span>共购买2笔</span>
+		</p>
+	</div>
+	<div class="info">
+		<div class="tab">
+			<span [class.active]="info_sync == 'info'" (click)="changeTab('info')">工具介绍</span>
+			<span [class.active]="info_sync == 'purchase'" (click)="changeTab('purchase')">购买记录</span>
+		</div>
+		<div class="tool-info tool-tab" [hidden]="info_sync != 'info'">
+			<p>
+				<i v-html="data.info.info"></i>
+			</p>
+		</div>
+		<div class="tool-purchase tool-tab" [hidden]="info_sync != 'purchase'">
+			<!-- <ion-grid>
+			  <ion-row>
+			    <ion-col>账号</ion-col>
+			    <ion-col>购买时间</ion-col>
+			    <ion-col>购买数量</ion-col>
+			  </ion-row>
+			  <ion-row>
+			    <ion-col>139****8389</ion-col>
+			    <ion-col>2017-6-14</ion-col>
+			    <ion-col>1</ion-col>
+			  </ion-row>
+			</ion-grid> -->
+			<table class="ui-table-data text-center">
+				<tr>
+					<th>账号</th>
+					<th>购买时间</th>
+					<th>购买数量</th>
+				</tr>
+				<tr>
+					<td>139****8389</td>
+					<td>2017-6-14</td>
+					<td>1</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<!-- <ion-buttons>
+  <button ion-button (click)="useTool()">立即使用</button>
+</ion-buttons> -->
+<div class="btn-bottom">
+	<span class="price">￥1.00</span>
+	<span>
+		<button class="btn btn-warning" (click)="useTool()">立即使用</button>
+	</span>
+</div>
+</ion-content>

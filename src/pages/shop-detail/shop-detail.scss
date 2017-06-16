@@ -1,0 +1,103 @@
+page-shop-detail {
+
+	.scroll-content{
+		margin-top: 0px!important;
+		padding: 0!important;
+		.banner{
+			height: 300px;
+			.swiper-slide{
+				width: 100%!important;
+			}
+		}
+	}
+
+	.btn-warning{
+		background-color: orange;
+		color: #fff;
+	}
+
+	.detail{
+	    width: 100%;
+	    .title{
+	        font-size: 18px;
+	        background: #fff;
+	        padding: 10px;
+	        p{
+	            padding: 5px;
+	        }
+	        .price{
+	            color: red;
+	        }
+	        .num{
+	            font-size: 16px;
+	            color: #9b9b9b;
+	        }
+	    }
+	    .info{
+	        width: 100%;
+	        background: #fff;
+	        margin: 20px 0 60px 0;
+	        .tab{
+	            width: 100%;
+	            span{
+	                background: #fff;
+	                padding: 10px;
+	                width: 50%;
+	                text-align: center;
+	                display: block;
+	                float: left;
+	                border: 1px solid #efefef;
+	                &.active{
+	                    border-bottom: 2px solid #4B8FE4;
+	                    color: #4B8FE4;
+	                }
+	            }
+	        }
+	        .tool-tab{
+	            width: 100%;
+	            padding: 10px;
+	            overflow: hidden;
+	            .ui-table-data{
+	            	width: 100%;
+	            }
+	        }
+	        td,th{
+	            text-align: center;
+	            padding: 10px;
+	        }
+	        th{
+	            border-top: 2px solid #CED4E0;
+	            background: #E9ECF1;
+	        }
+	    }
+	}
+
+	.button{
+		width: 100%;
+		margin: 0!important;
+		border-radius: 0;
+	}
+
+	.btn-bottom{
+	    position: fixed;
+	    bottom: 0;
+	    width: 100%;
+	    span{
+	        display: block;
+	        float: left;
+	        width: 50%;
+	        text-align: center;
+	        background: #fff;
+	        height: 50px;
+	        line-height: 50px;
+	        .btn{
+	            width: 100%;
+	            height: 100%;
+	        }
+	    }
+	    .price{
+	        color: red;
+	        font-size: 18px;
+	    }
+	}
+}

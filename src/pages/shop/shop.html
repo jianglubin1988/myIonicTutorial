@@ -1,0 +1,60 @@
+<!--
+  Generated template for the ShopPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>商城首页</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding id="shop-content">
+	<ion-slides pager class="banner">
+	  <ion-slide (click)="itemTapped()">
+	  	<img src="assets/images/enter.png"/>
+	  </ion-slide>
+	  <ion-slide (click)="itemTapped()">
+	  	<img src="assets/images/calc.png"/>
+	  </ion-slide>
+	  <ion-slide (click)="itemTapped()">
+	  	<img src="assets/images/balance.png"/>
+	  </ion-slide>
+	  <ion-slide (click)="itemTapped()">
+	  	<img src="assets/images/new.png"/>
+	  </ion-slide>
+	</ion-slides>
+
+	<div class="exhibition">
+		<div class="title">
+			<span>——热门推荐——</span>
+		</div>
+		<div class="products">
+			<p (click)="itemTapped()">
+				<img src="assets/images/enter.png"/>
+				<span class="tool-name">企业绩效指标</span>
+				<span class="tool-price">￥1.00</span>
+			</p>
+			<p (click)="itemTapped()">
+				<img src="assets/images/calc.png"/>
+				<span class="tool-name">算诉讼</span>
+				<span class="tool-price">￥1.00</span>
+			</p>
+			<p (click)="itemTapped()">
+				<img src="assets/images/balance.png"/>
+				<span class="tool-name">流动资金需求测算</span>
+				<span class="tool-price">￥1.00</span>
+			</p>
+			<p (click)="itemTapped()">
+				<img src="assets/images/new.png"/>
+				<span class="tool-name">新三板自评工具</span>
+				<span class="tool-price">￥1.00</span>
+			</p>
+		</div>
+	</div>
+
+
+</ion-content>
